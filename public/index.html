@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ropsten Ethereum Faucet</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <a  id="folk" href="https://github.com/niawjunior/ethereum-faucet-firebase-function"><img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="img/right-red@2x.png" alt="Fork me on GitHub"></a>
+</head>
+<body>
+    <style>
+    @media (max-width:480px)  {
+        #folk {
+            display: none;
+        }
+    }    
+    </style>
+    <div class="container">
+        <div class="col-lg-12">
+            <h2 class="text-center mt-5">Ropsten Ethereum Faucet</h2>
+            <form id="faucet" method="POST">
+                <div class="col-lg-8 mx-auto">
+                    <div class="form-group">
+                        <label>Balance:
+                            <span id="total_balance"></span>
+                        </label>
+                        <input type="text" class="form-control" id="ethereum_wallet" name="ethereum_wallet" placeholder="Your ethereum wallet" required>
+                    </div>
+                </div>
+                <div class="col-lg-8 mx-auto">
+                    <button id="submit" class="btn btn-primary btn-block">Submit</button>
+                </div>
+                <br>
+                <div class="col-lg-8 mx-auto">
+                    <div class="form-group">
+                        <p id="delay" style="color:brown"></p>
+                        <p id="show_transaction" style="display:none">
+                            Transaction: <a id="hash" target="_blank"></a>
+                        </p>
+                        </label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <footer>
+           <h5 class="text-center">Donate</h5>
+            <p class="text-center" style="word-wrap: break-word;">
+                0xcf4ca355ec55724dec46404b360bc00e516f6e8f
+                </p>
+        </footer>
+    </div>
+</body>
+<script src="js/axios.min.js"></script>
+<script src="js/index.js"></script>
+</html>
