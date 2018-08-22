@@ -1,4 +1,3 @@
-## try it -> https://crowdsale-website-9cfce.firebaseapp.com/
 ![alt text](demo.png)
 
 ### api
