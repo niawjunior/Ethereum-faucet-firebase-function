@@ -6,13 +6,13 @@ const Tx = require('ethereumjs-tx');
 const bodyParser = require("body-parser");
 const cors = require('cors');
 const Buffer = require('safer-buffer').Buffer;
-const fromAddr = ''
-const privateKey = ''
+const fromAddr = 'ethereum public key'
+const privateKey = 'ethereum private key'
 var web3 = new Web3('https://ropsten.infura.io/v3/ad5e99c0b4274a698702b461b57a7f09');
 
 var app = express();
 app.use(cors({
-    origin: "https://crowdsale-website-9cfce.firebaseapp.com"
+    origin: true
 }));
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());

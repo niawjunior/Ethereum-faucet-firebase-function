@@ -16,7 +16,7 @@ document.querySelector("#faucet").addEventListener("submit", e => {
 
     axios({
         method: "POST",
-        url: "https://us-central1-crowdsale-website-9cfce.cloudfunctions.net/faucet/api",
+        url: "<firebae cloud function api url>faucet/api",  //ex https://xxxxx.cloudfunctions.net/
         data: {
             ethereum_wallet: ethereum_wallet
         }
